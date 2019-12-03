@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor() {
     console.log("Initializing megacondenser. . .")
-    this.changeTitle("Hello, world!")
+    this.changeTitle("Hello, World!!!")
   }
 
   changeTitle(title: string): void {
