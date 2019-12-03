@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular ToDo List';
+  title: string = 'Angular ToDo List';
+
+  constructor() {
+    console.log("Initializing megacondenser. . .")
+    this.changeTitle("Hello, world!")
+  }
+
+  changeTitle(title: string): void {
+    this.title = title;
+  }
 }
