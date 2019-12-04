@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 import { Todo } from '../models/Todo'
 
 @Component({
@@ -7,11 +7,28 @@ import { Todo } from '../models/Todo'
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-  todos: Todo[];
+  todos: Todo[]
 
   constructor() { }
 
   ngOnInit() {
+    this.todos = [
+      {
+        id: 1,
+        title: 'Clean house',
+        completed: false
+      },
+      {
+        id: 2,
+        title: 'Drink beer',
+        completed: true
+      },
+      {
+        id: 3,
+        title: 'Go to work',
+        completed: true
+      },
+    ]
   }
 
 }
